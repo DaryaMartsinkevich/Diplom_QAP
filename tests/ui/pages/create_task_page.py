@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 from tests.ui.pages.base_page import BasePage
 
 
-# Страница создания задачи
 class CreateTaskPage(BasePage):
     TASK_TITLE = (By.ID, 'title')
     TASK_DESCRIPTION = (By.ID, 'description')

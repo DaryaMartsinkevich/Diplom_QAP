@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 from tests.ui.pages.base_page import BasePage
 
 
-# Страница изменения задач
 class EditPage(BasePage):
     HEADER = (By.CLASS_NAME, 'card-header')
     EDIT_TITLE = (By.ID, 'title')

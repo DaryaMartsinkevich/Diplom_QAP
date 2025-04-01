@@ -79,7 +79,7 @@ def test_task(db_connection):
 
 
 @allure.feature('Task page')
-@allure.story("РАбота с задачами")
+@allure.story("Работа с задачами")
 def test_get_task():
     session = requests.Session()
     with allure.step("Аутентификация пользователя"):

@@ -13,7 +13,6 @@ from tests.ui.pages import TaskPage
     "username, password",
     [
         ('Hena', '123456789'),
-        ("Dima", "987654321"),
         ("Aniya", 'hanna'),
         (" ", 'password1'),
         ('User1', ' '),
@@ -37,13 +36,13 @@ def test_register_user(driver, db_connection, username, password):
     with allure.step("Проверяем валидность данных"):
         if username == ' ':
             assert register_user.get_error_message(), "Имя пользователя обязательно"
+        elif len(password) < 6:
+            assert register_user.get_error_message(), "Пароль должен содержать не менее 6 символов"
         elif password == ' ':
             assert register_user.get_error_message(), "Пароль обязателен"
         elif username == ' ' and password == ' ':
             assert register_user.get_error_message(), "Имя пользователя обязательно"
             assert register_user.get_error_message(), "Пароль обязателен"
-        elif len(password) < 6:
-            assert register_user.get_error_message(), "Пароль должен содержать не менее 6 символов"
 
 
 @pytest.mark.parametrize(

@@ -26,11 +26,6 @@ def db_connection():
 
 
 @pytest.fixture
-def create_user():
-    return CreatePage
-
-
-@pytest.fixture
 def valid_user():
     session = requests.Session()
     user = CreatePage()
@@ -44,3 +39,8 @@ def valid_user():
 ])
 def test_data(request):
     return request.param
+
+
+@pytest.fixture
+def create_user():
+    return CreatePage

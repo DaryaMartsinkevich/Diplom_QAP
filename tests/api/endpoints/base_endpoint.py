@@ -32,9 +32,6 @@ class Endpoint:
         assert self.response.status_code == 401, \
             f'Ожидаем статус-код 401, но получен{self.response.status_code}'
 
-    def validate(self, data):
-        jsonschema.validate(instance=data, schema=self.schema)
-
     def check_response_is_404(self):
         assert self.response.status_code == 404, \
             f'Ожидаем статус-код 404, но получен{self.response.status_code}'

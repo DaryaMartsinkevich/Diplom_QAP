@@ -3,7 +3,6 @@ from tests.ui.pages.base_page import BasePage
 from tests.ui.settings import url
 
 
-# Страница входа
 class LoginPage(BasePage):
     USERNAME = (By.ID, 'username')
     PASSWORD = (By.ID, 'password')

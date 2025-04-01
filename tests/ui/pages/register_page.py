@@ -4,7 +4,6 @@ from tests.ui.pages.base_page import BasePage
 from tests.ui.settings import url
 
 
-# Страница регистрации пользователя
 class RegisterPage(BasePage):
     USERNAME = (By.ID, 'username')
     PASSWORD = (By.ID, 'password')

@@ -5,7 +5,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from tests.ui.pages.base_page import BasePage
 
 
-# Страница задач
 class TaskPage(BasePage):
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, '[data-testid="flash-message-success"]')
     CREATE_TASK = (By.CSS_SELECTOR, '[data-testid="create-task-button"]')
