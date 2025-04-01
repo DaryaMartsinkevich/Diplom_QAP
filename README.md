@@ -65,8 +65,7 @@
 
 3. Соберите и запустите контейнеры:
    ```
-   docker-compose build
-   docker-compose up -d
+   пот
    ```
 
 4. Приложение будет доступно по адресу: http://localhost:5000
