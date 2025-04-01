@@ -18,15 +18,6 @@ class TaskPage(Endpoint):
         task_id = self.get_data()
         return task_id['id']
 
-    def get_task_title(self):
-        return self.get_data()['title']
-
-    def get_task_description(self):
-        return self.get_data()['description']
-
-    def get_task_status(self):
-        return self.get_data()['completed']
-
     def update_task(self, task_id, payload, session):
         self.response = session.put(f"{self.url}/tasks/{task_id}", json=payload, headers=headers)
         self.response_json = self.response.json()

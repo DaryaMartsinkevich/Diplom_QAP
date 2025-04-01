@@ -25,6 +25,7 @@ class EditPage(BasePage):
 
     def click_submit_button(self):
         self.click(self.SUBMIT_BUTTON)
+        self.driver.save_screenshot("edit_task.png")
 
     def click_cancel_button(self):
         self.click(self.CANCEL_BUTTON)

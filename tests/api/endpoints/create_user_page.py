@@ -26,6 +26,4 @@ class CreatePage(Endpoint):
         self.response_json = self.response.json()
         return session
 
-    def get_username(self):
-        return self.get_data()['username']
 

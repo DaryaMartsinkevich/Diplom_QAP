@@ -19,6 +19,7 @@ class CreateTaskPage(BasePage):
 
     def click_submit_button(self):
         self.click(self.TASK_BUTTON)
+        self.driver.save_screenshot("submit_task.png")
 
     def get_header(self):
         return self.find_element(self.CADR_HEADER).text

@@ -1,9 +1,8 @@
 import requests
 import pytest
 import allure
-from tests.api.canftest import db_connection, valid_user
-from tests.api.endpoints import CreatePage
-from tests.api.endpoints import TaskPage
+from tests.api.canftest import valid_user, db_connection
+from tests.api.endpoints import TaskPage, CreatePage
 from tests.api.endpoints import GetTask
 from tests.api.payload.payload import valid_create_payload, valid_new_task, valid_update_task, valid_new_create_payload, \
     new_task

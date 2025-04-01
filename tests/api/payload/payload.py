@@ -5,7 +5,7 @@ new_task = {
 }
 
 valid_new_create_payload = {
-    'username': 'Qwertysan',
+    'username': 'Gazmin',
     'password': 'Ivan12345678'
 }
 
