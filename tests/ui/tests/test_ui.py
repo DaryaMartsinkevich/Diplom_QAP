@@ -1,6 +1,5 @@
 import allure
 import pytest
-
 from tests.ui.pages import EditPage
 from tests.ui.pages import CreateTaskPage
 from tests.ui.conftest import driver_login

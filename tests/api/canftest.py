@@ -32,15 +32,3 @@ def valid_user():
     user.login_user(valid_create_payload, session)
     user.check_response_is_200()
     return user, session
-
-
-@pytest.fixture(params=[
-    (valid_create_payload, True)
-])
-def test_data(request):
-    return request.param
-
-
-@pytest.fixture
-def create_user():
-    return CreatePage
